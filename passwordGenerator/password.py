@@ -15,14 +15,18 @@ if __name__ == "__main__":
     allChar.extend(list(s4));
     random.shuffle(allChar);
 
-    passWordLength = int(input('Enter Length of password : '));
-    password = '';
+    passWordLength = input('Enter Length of password : ');
+    if passWordLength.isdigit():
+        passWordLength = int(passWordLength);
+        password = '';
 
-    # for i in range(passWordLength):
-    #     password += allChar[random.randint(0,len(allChar)-1)];
+        # for i in range(passWordLength):
+        #     password += allChar[random.randint(0,len(allChar)-1)];
 
-    password = ''.join(allChar[0:passWordLength]);
-    print(password);
+        password = ''.join(allChar[0:passWordLength]);
+        print(password);
 
-    password = ''.join(random.sample(allChar,passWordLength));
-    print(password);
+        password = ''.join(random.sample(allChar,passWordLength));
+        print(password);
+    else : 
+        print('Please Enter a valid number');
