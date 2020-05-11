@@ -213,7 +213,7 @@ print(np.linspace(0,1,20,False)); #false will not count end point by default if 
 print(np.zeros(5));
 print(np.zeros((3,3)));
 print(np.ones(5));
-print(np.ones((3,3)));
+print(np.ones((3,3),dtype=np.int));
 print(np.empty(5));
 print(np.empty((3,3)));
 
@@ -226,3 +226,16 @@ print(np.eye(8,4,k=-3));
 
 #
 print("Hello Manan"[6]);
+
+#ones_like  => make array with same shape of passed array but with 1's in it
+a = np.arange(4);
+print(np.ones_like(a));
+
+#zeros_like  => make array with same shape of passed array but with 0's in it
+a = np.arange(4);
+print(np.zeros_like(a));
+
+#copy => copy numPy array by reference not saperate created
+#all => return true if all elements are non zero
+#any => return true if there is any zero available in numPy array
+#max => give max value from numPy array
