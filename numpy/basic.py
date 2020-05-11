@@ -184,3 +184,45 @@ print(a.dot(b));
 print(a@b); #cross product
 print(b.T); #transpose
 print(b.T @ a);
+
+
+#some numPy functions
+print('---------------');
+#random
+print(np.random.normal(size=2));
+print(np.random.random(size=2));
+print(np.random.rand(2,4));
+print(np.random.randint(50,size=(3,3)));
+print(np.random.choice(np.arange(5)));
+
+print('---------------');
+#arrange
+print(np.arange(10)); 
+print(np.arange(5,10));
+print(np.arange(0,1,0.1));\
+
+#reshape
+print(np.arange(10).reshape(2,5));
+
+#linspace give start , stop and parts it will crate array of num of parts from start to end
+print(np.linspace(1,5,5));
+print(np.linspace(2,2,20));
+print(np.linspace(0,1,20,False)); #false will not count end point by default if you dopn't provide it's true
+
+#zeros,ones,enpty
+print(np.zeros(5));
+print(np.zeros((3,3)));
+print(np.ones(5));
+print(np.ones((3,3)));
+print(np.empty(5));
+print(np.empty((3,3)));
+
+
+#identity , eye to make identity matix
+print(np.identity(3));
+print(np.eye(3,3));
+print(np.eye(3,3,k=1));
+print(np.eye(8,4,k=-3));
+
+#
+print("Hello Manan"[6]);
