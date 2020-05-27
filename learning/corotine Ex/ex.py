@@ -1,4 +1,4 @@
-languages = ['javascript','python','java','kotlin','html5','scss','c','c++','rust','wasm','elm','c#','typescript','scala','haskell']
+languages = ['javascript','python','java','kotlin','html5','scss','c','c++','rust','wasm','elm','c#','typescript','scala','haskell'];
 
 files = [];
 
