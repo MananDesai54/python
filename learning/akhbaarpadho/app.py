@@ -3,7 +3,7 @@ import requests;
 import time;
 from colorama import Fore,Back,Style;
 
-api_key = '7f8f6561275a4cf892842919010df028';
+api_key = 'YOUR_API_KEY';
 
 number_words = {
     1 : 'first',
