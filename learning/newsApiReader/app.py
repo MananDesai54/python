@@ -3,7 +3,7 @@ import requests;
 import time;
 from colorama import Fore,Back,Style;
 
-api_key = 'YOUR_API_KEY';
+api_key = '7f8f6561275a4cf892842919010df028';
 
 number_words = {
     1 : 'first',
@@ -14,7 +14,7 @@ number_words = {
     6 : 'sixth',
     7 : 'seventh',
     8 : 'eight',
-    9 : 'nineth',
+    9 : 'ninth',
     10: 'tenth'
 }
 
@@ -38,13 +38,16 @@ if __name__ == "__main__":
         news_list = news_dict['articles'];
         
         for news in news_list:
+            print('------------------------***********************-------------------------*****************');
             print(Fore.WHITE , 'For more visit this url ' ,sep='',end=' ')
             print(Fore.GREEN , news["url"] , sep='');
             index = news_list.index(news)+1;
             speech(f'{number_words[index]} news');
-            speech('Title')
+            speech('Title');
+            print(f'Title - {news["title"]}');
             speech(news['title']);
             speech('Description')
+            print(f'Description - {news["description"]}');
             speech(news['description']);
             print(Fore.WHITE,'press any key for next news...',sep='');
             input();
